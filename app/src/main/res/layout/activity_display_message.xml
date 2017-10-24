@@ -14,104 +14,52 @@
         tools:layout_editor_absoluteY="478dp"
         tools:layout_editor_absoluteX="16dp" />
 
-    <android.support.design.widget.TabLayout
-        android:layout_width="354dp"
-        android:layout_height="444dp"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="16dp">
 
-        <android.support.design.widget.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Left">
-<!--
-            <TableLayout
-                android:layout_width="354dp"
-                android:layout_height="457dp"
-                tools:layout_editor_absoluteX="13dp"
-                tools:layout_editor_absoluteY="16dp">
+    <TabHost
+        android:layout_width="200dip"
+        android:layout_height="300dip"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="63dp">
 
-                <TableRow
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <include layout="@layout/tab1_layout"/>
+                </LinearLayout>
 
-                    <TextView
-                        android:padding="3dip"
-                        android:text="table_layout_1_open" />
-
-                    <TextView
-                        android:gravity="right"
-                        android:padding="3dip"
-                        android:text="table_layout_1_open_shortcut" />
-                </TableRow>
-
-                <TableRow
+                <LinearLayout
+                    android:id="@+id/tab2"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <include layout="@layout/tab2_layout"/>
+                </LinearLayout>
 
-                    <TextView
-                        android:padding="3dip"
-                        android:text="table_layout_2_open" />
-
-                    <TextView
-                        android:gravity="right"
-                        android:padding="3dip"
-                        android:text="table_layout_2_open_shortcut" />
-                </TableRow>
-
-                <TableRow
+                <LinearLayout
+                    android:id="@+id/tab3"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:padding="3dip"
-                        android:text="table_layout_3_open" />
-
-                    <TextView
-                        android:gravity="right"
-                        android:padding="3dip"
-                        android:text="table_layout_3_open_shortcut" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:padding="3dip"
-                        android:text="table_layout_4_open" />
-
-                    <TextView
-                        android:gravity="right"
-                        android:padding="3dip"
-                        android:text="table_layout_4_open_shortcut" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:padding="3dip"
-                        android:text="table_layout_5_open" />
-
-                    <TextView
-                        android:gravity="right"
-                        android:padding="3dip"
-                        android:text="table_layout_5_open_shortcut" />
-                </TableRow>
-            </TableLayout>-->
-        </android.support.design.widget.TabItem>
-
-        <android.support.design.widget.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Center" />
-
-        <android.support.design.widget.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Right" />
-    </android.support.design.widget.TabLayout>
-
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
 </android.support.constraint.ConstraintLayout>
