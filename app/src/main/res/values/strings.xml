@@ -13,4 +13,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="customer_manager">Quan ly khach hang</string>
+    <string name="report">Bao cao</string>
+    <string name="statics">Thong ke</string>
 </resources>
