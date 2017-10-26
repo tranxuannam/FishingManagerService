@@ -28,8 +28,29 @@
 
             <TabWidget
                 android:id="@android:id/tabs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:tag="tab0"
+                    android:text="Tab 1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    />
+                <TextView
+                    android:tag="tab1"
+                    android:text="Tab 2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    />
+                <TextView
+                    android:tag="tab2"
+                    android:text="Tab 3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    />
+
+            </TabWidget>
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
