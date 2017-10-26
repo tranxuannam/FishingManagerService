@@ -31,7 +31,7 @@ public class BaseMenuActivity extends AppCompatActivity {
                         "Up...",
                         Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.statics:
+            case R.id.add_customer:
                 Toast.makeText(getApplicationContext(),
                         "Down...",
                         Toast.LENGTH_SHORT).show();

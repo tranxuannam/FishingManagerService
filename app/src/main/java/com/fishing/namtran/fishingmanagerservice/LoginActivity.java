@@ -352,10 +352,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         /** Called when the user taps the Send button */
         private void sendMessage() {
-            Intent intent = new Intent(getApplicationContext(), DisplayMessageActivity.class);
-            EditText editText = (EditText) findViewById(R.id.email);
-            String message = editText.getText().toString();
-            intent.putExtra(EXTRA_MESSAGE, message);
+            Intent intent = new Intent(getApplicationContext(), ManagerCustomerActivity.class);
+            //EditText editText = (EditText) findViewById(R.id.email);
+            //String message = editText.getText().toString();
+            //intent.putExtra(EXTRA_MESSAGE, message);
             startActivity(intent);
         }
     }
